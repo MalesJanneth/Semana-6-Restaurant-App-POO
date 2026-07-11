@@ -16,6 +16,5 @@ class Bebida(Producto):
         """
         print("\n---BEBIDA---")
         print(f"Nombre: {self.nombre}")
-        print(f"Precio: ${self.obtener_precio():.2f}")
-        print(f"Disponibilidad: {"Sí" if self.disponibilidad else "No"}")
+        super().mostrar_informacion()
         print(f"Tamaño: {self.tamaño}")

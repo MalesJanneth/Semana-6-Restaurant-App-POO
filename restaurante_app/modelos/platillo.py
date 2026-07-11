@@ -15,8 +15,5 @@ class Platillo(Producto):
         para demostrar polimorfismo
         """
         print("\n---PLATILLO---")
-        print(f"Nombre: {self.nombre}")
-        print(f"Precio: ${self.obtener_precio():.2f}")
-        print(f"Disponibilidad: {"Sí" if self.disponibilidad else "No"}")
+        super().mostrar_informacion()
         print(f"Calorías: {self.calorias}")
-    

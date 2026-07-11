@@ -14,7 +14,6 @@ class Producto:
             self.__precio = nuevo_precio
         else:
             print("El precio debe ser mayor a 0")
-
     
     def mostrar_informacion(self):
         """Muestra la información general del producto"""

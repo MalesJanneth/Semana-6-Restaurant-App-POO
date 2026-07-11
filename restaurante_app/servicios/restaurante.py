@@ -5,15 +5,20 @@ class Restaurante:
     """
     def __init__(self):
         self.productos = []
-#Productos 
-    def registrar_producto(self, producto):
-        self.productos.append(producto)
-        print(f"{producto.nombre} Registrado correctamente")
+#Productos
+    def registrar_platillo(self, platillo):
+        self.productos.append(platillo)
+        print(f"{platillo.nombre} Registrado correctamente")
+
+    def registrar_bebida(self, bebida):
+        self.productos.append(bebida)
+        print(f"{bebida.nombre} Registrada correctamente")
 
     def mostrar_productos(self):
         print("\n---PRODUCTOS DEL RESTAURANTE---")
         if not self.productos:
-            producto("No existen productos registrados")
+            print("No existen productos registrados")
+            return
         
         for producto in self.productos:
             producto.mostrar_informacion()
